@@ -1,7 +1,7 @@
 import "./Button.scss"
 
-export const Button = ({ children }) => {
+export const Button = ({ children, variant = 'primary' }) => {
     return (
-        <button>{children}</button>
+        <button className={`${variant}`}>{children}</button>
     )
 }

@@ -17,5 +17,7 @@ export const Header = () => {
                 <Button>Contact Us</Button>
             </div>
         </header>
+
+        // TODO: настроим роутер, поработает с style guide
     );
 }

@@ -3,12 +3,24 @@ button {
     font-size: 15px;
     font-weight: 500;
     padding: 14px 32px;
-    color: #fff;
-    background-color: #2C3878;
     transition: background-color 0.3s linear;
     cursor: pointer;
 }
 
-button:hover {
+button.primary {
+    background-color: #2C3878;
+    color: #fff;
+}
+
+button.primary:hover {
     background-color: #566093;
+}
+
+button.secondary {
+    background-color: #FFFFFF;
+    color: #333;
+}
+
+button.secondary:hover {
+    background-color: #ABAFC9;
 }

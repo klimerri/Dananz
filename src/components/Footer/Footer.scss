@@ -1,0 +1,129 @@
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    padding-top: 80px;
+    padding-bottom: 127px;
+
+    &__container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        gap: 230px;
+    }
+
+    &__left-side {
+        display: flex;
+        flex-direction: column;
+        width: 40%
+    }
+
+    
+    &__logo {
+        width: 126px;
+    }
+
+    &__best {
+        font-size: 36px;
+        font-weight: 600;
+        color: #333333;
+        line-height: 61.2px;
+    }
+
+    &__right-side {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        position: relative;
+    }
+
+    &__enter-email {
+        color: #333333;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28.8px;
+    }
+
+    &__enter-email::before{
+        content: url('src/images/round.svg');
+        width: 14px;
+        height: 14px;
+        margin-right: 10px;
+        position: relative;
+        bottom: -2px;
+    }
+
+    &__input {
+        position: relative;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    input {
+        border: none;
+        width: 100%;
+        padding: 0 0 15px 0;
+        border-bottom: solid 1px #141414;
+        font-size: 16px;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    &__button-email {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 0;
+        background-color: #fff;
+        border-radius: 50%;
+        transition: background-color 0.3s linear;
+        width: 26px;
+        height: 26px;
+    }
+
+    &__button-email:hover {
+        background-color: #D9D9D9;
+    }
+
+    &__follow-us {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        position: absolute;
+        right: 0;
+        bottom: -20px;
+    }
+
+    &__follow {
+        font-size: 16px;
+        font-weight: 400;
+        color: #333333;
+    }
+
+    &__social-networks {
+        display: flex;
+        gap: 25px;
+        margin-top: 11px;
+    }
+
+    &__network {
+        background-color: #D9D9D9;
+        border-radius: 50%;
+        padding: 3px;
+        cursor: pointer;
+        transition: background-color 0.3s linear;
+    }
+
+    &__network:hover {
+        background-color: #9C9C9C;
+    }
+
+}
+
+
+
+
