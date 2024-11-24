@@ -10,7 +10,7 @@ export const ContactUs = () => {
                 <div className="contactUs__right-side">
                     <p className="contactUs__text">Contact us below to work together to build your amazing interior</p>
 
-                    <div className="contacUs__button">
+                    <div className="contactUs__button">
                         <Button variant="secondary">Contact Us</Button>
                     </div>
                 </div>

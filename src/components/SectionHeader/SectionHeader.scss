@@ -1,0 +1,14 @@
+.section-header {
+    &__container {
+        width: max-content;
+        display: flex;
+        gap: 25px;
+    }
+
+    &__name {
+        color: #000000;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+}

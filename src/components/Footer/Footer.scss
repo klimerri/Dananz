@@ -21,7 +21,7 @@ h4 {
         width: 40%
     }
 
-    
+
     &__logo {
         width: 126px;
     }
@@ -46,7 +46,7 @@ h4 {
         line-height: 28.8px;
     }
 
-    &__enter-email::before{
+    &__enter-email::before {
         content: url('src/images/round.svg');
         width: 14px;
         height: 14px;
@@ -80,7 +80,7 @@ h4 {
         padding: 0;
         background-color: #fff;
         border-radius: 50%;
-        transition: background-color 0.3s linear;
+        transition: background-color 0.15s linear;
         width: 26px;
         height: 26px;
     }
@@ -112,7 +112,7 @@ h4 {
         border-radius: 50%;
         padding: 3px;
         cursor: pointer;
-        transition: background-color 0.3s linear;
+        transition: background-color 0.15s linear;
     }
 
     &__network:hover {
@@ -120,7 +120,3 @@ h4 {
     }
 
 }
-
-
-
-
