@@ -1,0 +1,28 @@
+.choose {
+    &__container {
+        width: 1200px; 
+        margin: 0 auto;
+    }
+
+    &__header {
+        font-size: 36px;
+        color: #333333;
+        font-weight: 600;
+        margin-top: 32px;
+    }
+
+    &__text{
+        font-size: 18px;
+        color: #9C9C9C;
+        font-weight: 400;
+        margin-top: 25px;
+        max-width: 471px;
+        line-height: 28.8px;
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 18px;
+        margin-top: 40px;
+    }
+}

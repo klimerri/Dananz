@@ -1,0 +1,25 @@
+.achievement {
+    &__container{
+        width: 1200px;
+        margin: 100px auto;
+    }
+
+    &__header {
+        color: #000000;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 61.2px;
+        width: 738px;
+        margin-top: 20px;
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 60px;
+        margin-top: 55px;
+
+        .image {
+            width: auto;
+        }
+    }
+}

@@ -19,6 +19,16 @@ export const WhyChooseUs = () => {
 					name="High Quality"
 					text="Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations."
 				/>
+
+				<ChooseCard
+					name="High Quality"
+					text="Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations."
+				/>
+
+				<ChooseCard
+					name="High Quality"
+					text="Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations."
+				/>
 			</div>
 		</div>
 	);
