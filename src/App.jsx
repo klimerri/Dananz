@@ -1,11 +1,8 @@
 import { Header } from "./components/Header/Header";
 import { ContactUs } from "./components/ContactUs/ContactUs";
 import { Footer } from "./components/Footer/Footer";
-import { Statistics } from "./components/Statistics/Statistics";
-import { PageInfo } from "./components/PageInfo/PageInfo";
-import { SectionHeader } from "./components/SectionHeader/SectionHeader";
-import { WhyChooseUs } from "./components/WhyChooseUs/WhyChooseUs";
-import img from "./images/achievementSea.png"
+import img from "/src/images/homeMain.png";
+import { Statistics } from './components/Statistics/Statistics';
 import "./App.scss";
 
 const App = () => {
@@ -14,32 +11,29 @@ const App = () => {
 			<Header />
 
 			<main>
-				<PageInfo
-					name="About"
-					text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
-					imgLink="/src/images/aboutImg.png"
-				/>
+				<div className="home__info">
+					<div className="info__container">
+						<div className="info__header">
+							<div className="info__header__container-title">
+								<h1 className="info__header-title">Design your interor with high quality.</h1>
+							</div>
 
-				<div className="achievement">
-					<div className="achievement__container">
-						<SectionHeader name="ACHIEVEMENT"/>
+							<p className="info__header-rights">2022 <br /> ALL RIGHT RESERVED</p>
+						</div>
 
-						<h2 className="achievement__header">interior customization with Dananz, 
-							best quality with professional workers
-						</h2>
+						<div className="info__images">
+							<img src={img} className="info__images-main"></img>
 
-						<div className="achievement__wrapper">
-							<img src={img} className="image"></img>
-
-							<Statistics />
+							<div className="info__images-statistics">
+								<Statistics />
+							</div>
 						</div>
 					</div>
 				</div>
 
-				<WhyChooseUs />
-
 				<ContactUs />
 			</main>
+
 			<Footer />
 		</div>
 	);

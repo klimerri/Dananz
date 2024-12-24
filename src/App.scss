@@ -1,25 +1,72 @@
-.achievement {
-    &__container{
+.home{
+    &__info {
         width: 1200px;
         margin: 100px auto;
     }
+}
 
-    &__header {
-        color: #000000;
-        font-size: 36px;
-        font-weight: 600;
-        line-height: 61.2px;
-        width: 738px;
-        margin-top: 20px;
+.info {
+    &__container {
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
     }
 
-    &__wrapper {
-        display: flex;
-        gap: 60px;
-        margin-top: 55px;
+    &__header{
+        display: flex; 
+        justify-content: space-between;
+        align-items: end;
 
-        .image {
-            width: auto;
+        &__container-title {
+            width: 100%;
+        }
+
+        &-title {
+            font-size: 72px;
+            font-weight: 700;
+            line-height: 100.8px;
+            color: #333333;
+            width: 681px;
+            position: relative;
+
+            &::before {
+                content: url('/src/images/longSectionLine.svg');
+                position: absolute;
+                top: -30px;
+                right: -505px;
+            }
+        }
+
+        &-rights{
+            width: 210px;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 27px;
+            color: #333333;
+            transform-origin: top;
+            transform: rotate(-90deg);
+            position: relative;
+            top: -45px;
+            left: 35px;
+        }
+    }
+
+    &__images {
+        position: relative;
+
+        &-main {
+            margin-top: 45px;
+        }
+
+        &-statistics {
+            width: min-content;
+            height: min-content;
+            position: absolute;
+            top: -160px;
+            right: 135px;
         }
     }
 }
+
+
