@@ -2,6 +2,7 @@
     background-color: #FFFFFF;
 
     &__container {
+        margin-top: 43px;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -36,7 +37,20 @@
             font-weight: 400;
             line-height: 28.8px;
             color: #333333;
+            width: 469px;
         }
     }
 
+    &__button {
+        background-color: #FFFFFF;
+        transition: background-color 0.15s linear;
+        width: 32px;
+        height: 32px;
+        padding: 0px;
+        border-radius: 50%;
+
+        &:hover {
+            background-color: #D9D9D9;
+        }
+    }
 }

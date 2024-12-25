@@ -1,0 +1,32 @@
+.product {
+    &__container {
+        width: 1200px;
+        margin: 0 auto;
+        margin-bottom: 163px;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 35px;
+        margin-bottom: 75px;
+
+        &-title {
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 61.2px;
+            color: #333333;
+            width: 337px;
+        }
+
+        &-text {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28.8px;
+            color: #9C9C9C;
+            width: 473px;
+        }
+    }
+
+
+}

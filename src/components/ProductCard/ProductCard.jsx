@@ -1,7 +1,7 @@
 import "./ProductCard.scss";
 import arrow from "/src/images/arrow-right.svg";
 
-export const ProductCard = () => {
+export const ProductCard = (props) => {
     return (
         <div className="card__container">
                 <div className="card__header">
