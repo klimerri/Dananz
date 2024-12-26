@@ -6,6 +6,7 @@ import { Product } from './components/Product/Product';
 import { SectionHeader } from './components/SectionHeader/SectionHeader';
 import img from "/src/images/homeMain.png";
 import aboutHome from "/src/images/aboutHome.png";
+import seo from '/src/images/seo.png'
 import "./App.scss";
 import { useState } from "react";
 
@@ -73,12 +74,22 @@ const App = () => {
 					<div className="about__main">
 						<img className="about__main-image" src={aboutHome}></img>
 
+						<div className="about__main-card">
+							<img className="about__main-card__photo" src={seo}></img>
+
+							<div className="about__main-card__info">
+								<span className="about__main-card__info-name">Arga Danaan</span>
+
+								<span className="about__main-card__info-post">CEO of Dananz</span>
+							</div>
+						</div>
+
 						<div className="about__main-text">
-							<p className="main-text__description">Online learning with us does not interfere with your daily life. 
+							<p className="about__main-text__description">Online learning with us does not interfere with your daily life. 
 								because learning can be done anytime and anywhere.
 							</p>
 
-							
+							<a href="#" className="about__main-text__link">Learn more</a>
 						</div>
 					</div>
 				</div>
