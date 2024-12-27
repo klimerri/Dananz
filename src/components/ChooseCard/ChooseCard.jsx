@@ -2,12 +2,14 @@ import "./ChooseCard.scss";
 
 export const ChooseCard = (props) => {
 	return (
-		<div className="card__container">
-			<img className="card__image" src="/src/images/ChooseCard.svg"></img>
+		<div className="choose-card">
+			<div className="choose-card__container">
+				<img className="choose-card__image" src="/src/images/ChooseCard.svg"></img>
 
-			<span className="card__header">{props.name}</span>
+				<span className="choose-card__header">{props.name}</span>
 
-			<p className="card__text">{props.text}</p>
+				<p className="choose-card__text">{props.text}</p>
+			</div>
 		</div>
 	);
 };

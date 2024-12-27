@@ -1,5 +1,6 @@
 import "./Header.scss"
 import { Button } from "../Button/Button"
+import { NavLink } from "react-router-dom";
 
 export const Header = () => {
     return (
@@ -8,10 +9,10 @@ export const Header = () => {
 
             <div className="header__right-side">
                 <div className="header__links">
-                    <a href="#" className="header__link">Home</a>
-                    <a href="#" className="header__link">About Us</a>
-                    <a href="#" className="header__link">Services</a>
-                    <a href="#" className="header__link">Our Teams</a>
+                    <NavLink to="/" className="header__link">Home</NavLink>
+                    <NavLink to="/about" className="header__link">About Us</NavLink>
+                    <NavLink to="/services" className="header__link">Services</NavLink>
+                    <NavLink to="/teams" className="header__link">Our Teams</NavLink>
                 </div>
                 
                 <Button>Contact Us</Button>
