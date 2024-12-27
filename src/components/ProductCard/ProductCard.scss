@@ -1,6 +1,25 @@
 .card {
     background-color: #FFFFFF;
 
+    &.simple {
+        .card__container {
+            margin-top: 35px;
+        }
+
+        .card__header {
+            gap: 40px;
+            height: 40px;
+        }
+
+        .card__header-title, .card__header-number {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 33.6px;
+            color: #333333;
+            height: 40px;
+        }
+    }
+
     &__container {
         margin-top: 43px;
         width: 100%;

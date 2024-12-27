@@ -1,12 +1,14 @@
 import { Header } from "./components/Header/Header";
 import { ContactUs } from "./components/ContactUs/ContactUs";
 import { Footer } from "./components/Footer/Footer";
-import { Statistics } from './components/Statistics/Statistics';
+import { Statistics } from "./components/Statistics/Statistics";
 import { Product } from './components/Product/Product';
 import { SectionHeader } from './components/SectionHeader/SectionHeader';
+import { ProductCard } from './components/ProductCard/ProductCard';
 import img from "/src/images/homeMain.png";
 import aboutHome from "/src/images/aboutHome.png";
-import seo from '/src/images/seo.png'
+import seo from '/src/images/seo.png';
+import homeService from "/src/images/homeService.png";
 import "./App.scss";
 import { useState } from "react";
 
@@ -37,6 +39,24 @@ const App = () => {
 			headerName: 'transitional',
 			headerText: 'the use of simple and limited elements to get the best effect or impression.'
 		},
+	]);
+
+	const [serviceList, setServiceList] = useState([
+		{
+			id: 1,
+			number: '01',
+			headerName: 'Interior Design'
+		},
+		{
+			id: 2,
+			number: '02',
+			headerName: 'Consultant'
+		},
+		{
+			id: 3,
+			number: '03',
+			headerName: 'Construction Consultant'
+		}
 	]);
 
 	return (
@@ -94,7 +114,40 @@ const App = () => {
 					</div>
 				</div>
 
+				<div className="service__container">
+					<div className="service__info">
+						<SectionHeader name="SERVICE" />
+
+						<h2 className="service__info-header">attractive furniture with the best quality.</h2>
+
+						<p className="service__info-text">Customize your interior design into a dream place with
+							 the best designers and quality furniture. 
+							 We try our best to fulfill your expectations.
+						</p>
+
+						<div className="service__list">
+							{serviceList.map(item => {
+								return (
+									<ProductCard
+										variant="2"
+										headerNumber={item.number}
+										headerName={item.headerName}
+									/> 
+								)
+							})}
+						</div>
+					</div>
+
+					<div className="service__image">
+						<img src={homeService}></img>
+					</div>
+				</div>
+
 				<Product list={list}/>
+
+				<div className="material__container">
+					<SectionHeader name="МАТЕРИАЛ" />
+				</div>
 
 				<ContactUs />
 			</main>
