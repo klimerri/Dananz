@@ -9,6 +9,9 @@ import img from "/src/images/homeMain.png";
 import aboutHome from "/src/images/aboutHome.png";
 import seo from '/src/images/seo.png';
 import homeService from "/src/images/homeService.png";
+import material1 from "/src/images/material1.png";
+import material2 from "/src/images/mterial2.png";
+import material3 from "/src/images/material3.png";
 import "./App.scss";
 import { useState } from "react";
 
@@ -146,7 +149,25 @@ const App = () => {
 				<Product list={list}/>
 
 				<div className="material__container">
-					<SectionHeader name="МАТЕРИАЛ" />
+					<SectionHeader name="MATERIAL" />
+
+					<h2 className="material__header">choice of materials for quality furniture.</h2>
+
+					<p className="material__text">You can custom the material as desired.
+						 And our furniture uses the best materials 
+						 and selected quality materials.
+					</p>
+
+
+					<a href="#" className="material__link">See materials</a>
+
+					<div className="material__wrapper">
+						<img className="material__wrapper-img1" src={material1}></img>
+
+						<img className="material__wrapper-img2" src={material2}></img>
+
+						<img className="material__wrapper-img3" src={material3}></img>
+					</div>
 				</div>
 
 				<ContactUs />
