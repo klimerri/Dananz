@@ -46,19 +46,22 @@ const Home = () => {
 
     const [serviceList, setServiceList] = useState([
         {
-            id: 1,
+            id: 'Interior-design',
             number: '01',
-            headerName: 'Interior Design'
+            headerName: 'Interior Design',
+            cardLink: '/services#Interior-design'
         },
         {
-            id: 2,
+            id: 'Consultant',
             number: '02',
-            headerName: 'Consultant'
+            headerName: 'Consultant',
+            cardLink: '/services#Consultant'
         },
         {
-            id: 3,
+            id: 'Construction-Consultant',
             number: '03',
-            headerName: 'Construction Consultant'
+            headerName: 'Construction Consultant',
+            cardLink: '/services#Construction-Consultant'
         }
     ]);
 
@@ -132,6 +135,7 @@ const Home = () => {
                                     variant="2"
                                     headerNumber={item.number}
                                     headerName={item.headerName}
+                                    cardLink={item.cardLink}
                                 /> 
                             )
                         })}

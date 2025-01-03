@@ -38,19 +38,19 @@ const [list, setList] = useState([
 
     const [achievementList, setAchievementList] = useState([
         {
-            id: 1,
+            id: 'Interior-design',
             imgLink: interiorDesign,
             header: "Interior design",
             text: "Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations."
         },
         {
-            id: 2,
+            id: 'Consultant',
             imgLink: consultant,
             header: "Consultant",
             text: "Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations."
         },
         {
-            id: 3,
+            id: 'Construction-Consultant',
             imgLink: constructionConsultant,
             header: "construction consultant",
             text: "Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations."
@@ -60,10 +60,11 @@ const [list, setList] = useState([
     return (
         <div className='services-page'>
             <PageInfo 
-            name="Services"
-            text="It is a long established fact that a reader will be distracted 
-            by the readable content of a page when looking at its layout."
-            imgLink={serviceImg}/>
+                name="Services"
+                text="It is a long established fact that a reader will be distracted 
+                by the readable content of a page when looking at its layout."
+                imgLink={serviceImg}
+            />
 
 
             <div className="services-page__achievement__container">
@@ -72,7 +73,7 @@ const [list, setList] = useState([
                 <div className="services-page__achievement__wrapper">
                     {achievementList.map(item => {
                         return (
-                            <div className="services-page__achievement-item">
+                            <div className="services-page__achievement-item" id={item.id}>
                                 <img className="services-page__achievement-item__image" src={item.imgLink}></img>
 
                                 <div className="services-page__achievement-item__description">
