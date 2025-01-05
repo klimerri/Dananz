@@ -1,0 +1,36 @@
+.team-card {
+    &__container {
+        width: 282px;
+        height: 400px;
+        background-color: #2C3878;
+        align-items: end;
+        position: relative;
+    }
+
+    &__block {
+        position: absolute;
+        bottom: 12px;
+        right: 12px;
+        box-sizing: border-box;
+        background-color: #FFFFFF;
+        width: 258px;
+        height: 96px;
+        padding: 18px 16px;
+        display: flex;
+        flex-direction: column;
+
+        &-header {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 33.6px;
+            color: #333333;
+        }
+
+        &-post {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 25.6px;
+            color: #9C9C9C; 
+        }
+    }
+}

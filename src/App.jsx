@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import Services from "./pages/Services/Services";
+import OurTeams from "./pages/OurTeams/OurTeams";
 import "./App.scss";
 import { Header } from './components/Header/Header';
 import { ContactUs } from './components/ContactUs/ContactUs';
@@ -18,6 +19,7 @@ const App = () => {
 					<Route path="/" element={<Home />}/>
 					<Route path="/about" element={<AboutUs />} />
 					<Route path="/services" element={<Services />} />
+					<Route path="/teams" element={<OurTeams/>} />
 				</Routes>
 
                 <ContactUs />

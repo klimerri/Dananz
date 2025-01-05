@@ -1,0 +1,36 @@
+.teams-page {
+    &__container {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    &__designer {
+        margin-top: 100px;
+        margin-bottom: 100px;
+
+        &-header {
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 61.2px;
+            color: #333333;
+            margin-top: 32px;
+
+        }
+
+        &-text {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28.8px;
+            color: #9C9C9C;
+            width: 471px;
+            margin-top: 24px;
+        }
+
+        &-wrapper {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin-top: 80px;
+        }
+    }
+}
