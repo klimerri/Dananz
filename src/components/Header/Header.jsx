@@ -1,6 +1,7 @@
 import "./Header.scss"
 import { Button } from "../Button/Button"
 import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
     return (
@@ -15,7 +16,9 @@ export const Header = () => {
                     <NavLink to="/teams" className="header__link">Our Teams</NavLink>
                 </div>
                 
-                <Button>Contact Us</Button>
+                <Link to="/contact">
+                    <Button>Contact Us</Button>
+                </Link>
             </div>
         </header>
     );
