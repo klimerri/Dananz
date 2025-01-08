@@ -40,7 +40,7 @@
             }
 
             &-block {
-                height: 62px;
+                min-height: 62px;
                 padding: 18px 32px;
                 box-sizing: border-box;
                 border: 1px solid black;
@@ -76,4 +76,119 @@
             width: 100%;
         }
     }
+
+    &__location {
+        margin-bottom: 100px;
+        
+        &__info {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-left {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__header {
+            margin-top: 32px;
+
+            &-title {
+                font-size: 36px;
+                font-weight: 600;
+                color: #333333;
+                line-height: 61.2px;
+                margin-bottom: 24px;
+            }
+
+            &-text {
+                font-size: 18px;
+                font-weight: 400;
+                color: #9C9C9C;
+                line-height: 28.8px;
+            }
+        }
+
+        &__email {
+            display: flex;
+            flex-direction: column;
+            margin-top: 39px;
+
+            &-header {
+                font-size: 24px;
+                font-weight: 600;
+                color: #333333;
+                line-height: 33.6px;
+                margin-bottom: 10px;
+            }
+
+            &-text {
+                font-size: 18px;
+                font-weight: 400;
+                color: #9C9C9C;
+                line-height: 28.8px;
+            }
+        }
+
+        &__phone {
+            display: flex;
+            flex-direction: column;
+            margin-top: 39px;
+
+            &-header {
+                font-size: 24px;
+                font-weight: 600;
+                color: #333333;
+                line-height: 33.6px;
+                margin-bottom: 10px;
+            }
+
+            &-number {
+                font-size: 18px;
+                font-weight: 400;
+                color: #9C9C9C;
+                line-height: 28.8px;
+            }
+        }
+
+        &-right {
+            width: 728px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 60px;
+            margin-top: 32px;
+        }
+
+        &__card {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            &-header {
+                font-size: 24px;
+                font-weight: 600;
+                color: #333333;
+                line-height: 33.6px;
+            }
+
+            &-text {
+                font-size: 18px;
+                font-weight: 400;
+                color: #9C9C9C;
+                line-height: 28.8px;
+            }
+        }
+    }
+}
+
+select {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+textarea {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 178px;
 }
