@@ -63,7 +63,8 @@ const Portfolio = () => {
                 <div className="portfolio_wrapper">
                     {list.map(item => {
                         return (
-                            <SeeMore 
+                            <SeeMore
+                            id={item.id} 
                             subTitle={item.header}
                             image={item.image}
                             description={item.description}

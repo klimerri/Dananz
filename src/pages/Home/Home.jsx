@@ -22,28 +22,28 @@ const Home = () => {
             number: '01',
             headerName: 'Vintage',
             headerText: 'the use of simple and limited elements to get the best effect or impression.',
-            cardLink: '/portfolio'
+            cardLink: '/portfolio#minimalistRoom'
         },
         {
             id: 2,
             number: '02',
             headerName: 'Minimalist',
             headerText: 'the use of simple and limited elements to get the best effect or impression.',
-            cardLink: '/portfolio'
+            cardLink: '/portfolio#vintageRoom'
         },
         {
             id: 3,
             number: '03',
             headerName: 'Modern',
             headerText: 'the use of simple and limited elements to get the best effect or impression.',
-            cardLink: '/portfolio'
+            cardLink: '/portfolio#modernRoom'
         },
         {
             id: 4,
             number: '03',
             headerName: 'transitional',
             headerText: 'the use of simple and limited elements to get the best effect or impression.',
-            cardLink: '/portfolio'
+            cardLink: '/portfolio#transitionalRoom'
         },
     ]);
 

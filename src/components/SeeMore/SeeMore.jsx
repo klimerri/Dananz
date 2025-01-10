@@ -2,9 +2,9 @@ import "./SeeMore.scss";
 import { WorkerCard } from "/src/components/WorkerCard/WorkerCard";
 import { Link } from "react-router-dom";
 
-const SeeMore = ({variant = "primary", mainHeader, image, description, link, textLink, subTitle}) => {
+const SeeMore = ({variant = "primary", id, mainHeader, image, description, link, textLink, subTitle}) => {
     return (
-        <div className="see-more__container">
+        <div className="see-more__container" id={id}>
             <h2 className="see-more__header">{mainHeader}</h2>
         
             <div className="see-more__main">
