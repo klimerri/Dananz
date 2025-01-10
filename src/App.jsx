@@ -5,6 +5,7 @@ import Services from "./pages/Services/Services";
 import OurTeams from "./pages/OurTeams/OurTeams";
 import Contact from "./pages/Contact/Contact";
 import Portfolio from "./pages/Portfolio/Portfolio";
+import MinimalistRoom from "./pages/MinimalistRoom/MinimalistRoom";
 import { Header } from './components/Header/Header';
 import { ContactUs } from './components/ContactUs/ContactUs';
 import { Footer } from './components/Footer/Footer';
@@ -24,7 +25,8 @@ const App = () => {
 					<Route path="/teams" element={<OurTeams />} />
 					<Route path="/contact" element={<Contact />} />
 					<Route path="/portfolio" element={<Portfolio />} />
-				</Routes>
+					<Route path="/minimalist-room" element={<MinimalistRoom />} />
+				</Routes> 
 
                 <ContactUs />
 			</main>

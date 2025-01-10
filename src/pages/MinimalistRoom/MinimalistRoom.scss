@@ -1,0 +1,90 @@
+.minimalist-room {
+    &__container {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    &__description {
+        margin-top: 100px;
+        display: flex;
+        gap: 32px;
+        margin-bottom: 80px;
+
+        &-left {
+            width: 50%;
+
+            &__header {
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 33.6px;
+                color: #333333;
+            }
+
+            &__wrapper {
+                display: flex;
+                flex-direction: column;
+                gap: 60px;
+                margin-top: 24px;
+            }
+
+            &__text {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 28.8px;
+                color: #9C9C9C;   
+            }
+
+            &__data {
+                display: flex;
+                gap: 80px;
+            }
+        }
+
+        &-right {
+            width: 50%;
+            
+            &__header {
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 33.6px;
+                color: #333333;
+            }
+
+            &__wrapper {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                margin-top: 24px;
+            }
+
+            &__text {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 28.8px;
+                color: #9C9C9C;   
+            }
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        margin-bottom: 100px;
+    }
+
+
+    &__images {
+        display: flex;
+        gap: 32px;
+    }
+    
+    &__image {
+        width: 50%;
+
+        &_big {
+            width: 100%;
+        }
+    }
+
+}
