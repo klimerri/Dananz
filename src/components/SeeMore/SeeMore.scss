@@ -2,7 +2,6 @@
     &__container {
         width: 1200px;
         margin: 0 auto;       
-        margin-bottom: 160px;
     }
 
     &__header {
@@ -11,13 +10,13 @@
         line-height: 61.2px;
         color: #333333;
         margin-top: 32px;
+        margin-bottom: 60px;
     }
 
     &__main {
         display: flex;
         align-items: center;
         gap: 94px;
-        margin-top: 60px;
         position: relative;
 
         &-image {
@@ -48,7 +47,6 @@
             &__primary {
                 display: flex;
                 flex-direction: column;
-                gap: 40px;
                 margin-top: 100px;
                 order: 1;
             }
@@ -56,9 +54,16 @@
             &__secondary {
                 display: flex;
                 flex-direction: column;
-                gap: 40px;
                 margin-top: 100px;
                 order: 0;
+            }
+
+            &__subtitle {
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 33.6px;
+                color: #333333;
+                margin-bottom: 20px;
             }
     
             &__description {
@@ -66,6 +71,7 @@
                 font-weight: 400;
                 line-height: 28.8px;
                 color: #9C9C9C;
+                margin-bottom: 40px;
             }
     
             &__link {

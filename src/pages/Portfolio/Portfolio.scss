@@ -1,0 +1,17 @@
+.portfolio {
+    &__container {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    &__works {
+        margin-top: 112px;
+        margin-bottom: 132px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+}

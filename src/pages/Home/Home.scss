@@ -77,55 +77,8 @@
         margin-bottom: 160px;
     }
 
-    &__header {
-        font-size: 36px;
-        font-weight: 600;
-        line-height: 61.2px;
-        color: #333333;
-        margin-top: 32px;
-    }
-
-    &__main {
-        display: flex;
-        align-items: center;
-        gap: 94px;
-        margin-top: 60px;
-
-        &-card {
-            position: absolute;
-            top: 265px;
-            right: 120px;
-        }
-
-        &-text {
-            display: flex;
-            flex-direction: column;
-            gap: 40px;
-            margin-top: 100px;
-    
-            &__description {
-                font-size: 18px;
-                font-weight: 400;
-                line-height: 28.8px;
-                color: #9C9C9C;
-            }
-    
-            &__link {
-                width: max-content;
-                text-decoration: none;
-                padding: 14px 32px;
-                font-size: 14px;
-                font-weight: 500;
-                line-height: 21px;
-                color: #FFFFFF;
-                background-color: #2C3878;
-                transition: background-color 0.3s linear;
-
-                &:hover {
-                    background-color: #566093
-                }
-            }
-        }
+    &__learn-more {
+        margin-bottom: 160px;
     }
 }
 

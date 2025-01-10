@@ -1,11 +1,11 @@
 import "./SeeMore.scss";
 import { WorkerCard } from "/src/components/WorkerCard/WorkerCard";
-import aboutHome from "/src/images/aboutHome.png";
+import { Link } from "react-router-dom";
 
-const SeeMore = ({variant = "primary", header, image, description, link, textLink}) => {
+const SeeMore = ({variant = "primary", mainHeader, image, description, link, textLink, subTitle}) => {
     return (
         <div className="see-more__container">
-            <h2 className="see-more__header">{header}</h2>
+            <h2 className="see-more__header">{mainHeader}</h2>
         
             <div className="see-more__main">
                 <img className={`see-more__main-image__${variant}`} src={image}></img>
@@ -15,10 +15,11 @@ const SeeMore = ({variant = "primary", header, image, description, link, textLin
                 </div>
             
                 <div className={`see-more__main-text__${variant}`}>
-                    <p className="see-more__main-text__description">{description}
-                    </p>
+                    <h2 className="see-more__main-text__subtitle">{subTitle}</h2>
+
+                    <p className="see-more__main-text__description">{description}</p>
             
-                    <a href={link} className="see-more__main-text__link">{textLink}</a>
+                    <Link to={link} className="see-more__main-text__link">{textLink}</Link>
                 </div>
             </div>
         </div>

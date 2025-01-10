@@ -93,15 +93,17 @@ const Home = () => {
             <div className="about__container">
                 <SectionHeader name="ABOUT"/>
 
-                <SeeMore 
-                header="“We're one of the best furniture agency. 
-                    Prioritizing customers and making purchases easy are the hallmarks of our agency.”"
-                image={aboutHome}
-                description="Online learning with us does not interfere with your daily life. 
-                because learning can be done anytime and anywhere."
-                link="#"
-                textLink="Learn more"
-                />
+                <div className="about__learn-more">
+                    <SeeMore 
+                    mainHeader="“We're one of the best furniture agency. 
+                        Prioritizing customers and making purchases easy are the hallmarks of our agency.”"
+                    image={aboutHome}
+                    description="Online learning with us does not interfere with your daily life. 
+                    because learning can be done anytime and anywhere."
+                    link="/about"
+                    textLink="Learn more"
+                    />
+                </div>
             </div>
 
             <div className="service__container">
