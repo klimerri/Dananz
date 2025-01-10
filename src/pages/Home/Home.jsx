@@ -1,6 +1,3 @@
-import { Header } from "/src/components/Header/Header";
-import { ContactUs } from "/src/components/ContactUs/ContactUs";
-import { Footer } from "/src/components/Footer/Footer";
 import { Statistics } from "/src/components/Statistics/Statistics";
 import { Product } from '/src/components/Product/Product';
 import { SectionHeader } from '/src/components/SectionHeader/SectionHeader';
@@ -14,6 +11,8 @@ import material2 from "/src/images/mterial2.png";
 import material3 from "/src/images/material3.png";
 import "./Home.scss";
 import { useState } from "react";
+import { WorkerCard } from "../../components/WorkerCard/WorkerCard";
+import SeeMore from "../../components/SeeMore/SeeMore";
 
 
 const Home = () => {
@@ -22,25 +21,29 @@ const Home = () => {
             id: 1,
             number: '01',
             headerName: 'Vintage',
-            headerText: 'the use of simple and limited elements to get the best effect or impression.'
+            headerText: 'the use of simple and limited elements to get the best effect or impression.',
+            cardLink: '/portfolio'
         },
         {
             id: 2,
             number: '02',
             headerName: 'Minimalist',
-            headerText: 'the use of simple and limited elements to get the best effect or impression.'
+            headerText: 'the use of simple and limited elements to get the best effect or impression.',
+            cardLink: '/portfolio'
         },
         {
             id: 3,
             number: '03',
             headerName: 'Modern',
-            headerText: 'the use of simple and limited elements to get the best effect or impression.'
+            headerText: 'the use of simple and limited elements to get the best effect or impression.',
+            cardLink: '/portfolio'
         },
         {
             id: 4,
             number: '03',
             headerName: 'transitional',
-            headerText: 'the use of simple and limited elements to get the best effect or impression.'
+            headerText: 'the use of simple and limited elements to get the best effect or impression.',
+            cardLink: '/portfolio'
         },
     ]);
 
@@ -90,31 +93,15 @@ const Home = () => {
             <div className="about__container">
                 <SectionHeader name="ABOUT"/>
 
-                <h2 className="about__header">“We're one of the best furniture agency. 
-                    Prioritizing customers and making purchases easy are the hallmarks of our agency.”
-                </h2>
-
-                <div className="about__main">
-                    <img className="about__main-image" src={aboutHome}></img>
-
-                    <div className="about__main-card">
-                        <img className="about__main-card__photo" src={seo}></img>
-
-                        <div className="about__main-card__info">
-                            <span className="about__main-card__info-name">Arga Danaan</span>
-
-                            <span className="about__main-card__info-post">CEO of Dananz</span>
-                        </div>
-                    </div>
-
-                    <div className="about__main-text">
-                        <p className="about__main-text__description">Online learning with us does not interfere with your daily life. 
-                            because learning can be done anytime and anywhere.
-                        </p>
-
-                        <a href="#" className="about__main-text__link">Learn more</a>
-                    </div>
-                </div>
+                <SeeMore 
+                header="“We're one of the best furniture agency. 
+                    Prioritizing customers and making purchases easy are the hallmarks of our agency.”"
+                image={aboutHome}
+                description="Online learning with us does not interfere with your daily life. 
+                because learning can be done anytime and anywhere."
+                link="#"
+                textLink="Learn more"
+                />
             </div>
 
             <div className="service__container">

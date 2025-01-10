@@ -23,6 +23,7 @@ export const Product = (props) => {
                         headerNumber={item.number}
                         headerName={item.headerName}
                         headerText={item.headerText}
+                        cardLink={item.cardLink}
                     /> 
                 )
             })}

@@ -4,7 +4,7 @@ import AboutUs from "./pages/AboutUs/AboutUs";
 import Services from "./pages/Services/Services";
 import OurTeams from "./pages/OurTeams/OurTeams";
 import Contact from "./pages/Contact/Contact";
-import "./App.scss";
+import Portfolio from "./pages/Portfolio/Portfolio";
 import { Header } from './components/Header/Header';
 import { ContactUs } from './components/ContactUs/ContactUs';
 import { Footer } from './components/Footer/Footer';
@@ -23,6 +23,7 @@ const App = () => {
 					<Route path="/services" element={<Services />} />
 					<Route path="/teams" element={<OurTeams />} />
 					<Route path="/contact" element={<Contact />} />
+					<Route path="/portfolio" element={<Portfolio />} />
 				</Routes>
 
                 <ContactUs />
