@@ -59,6 +59,8 @@ h4 {
         position: relative;
         margin-top: 20px;
         margin-bottom: 40px;
+        display: flex;
+        justify-content: space-between;
     }
 
     input {
@@ -73,6 +75,14 @@ h4 {
         outline: none;
     }
 
+    &__button {
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
     &__button-email {
         position: absolute;
         right: 0;
@@ -81,13 +91,28 @@ h4 {
         background-color: #fff;
         border-radius: 50%;
         transition: background-color 0.15s linear;
-        width: 26px;
-        height: 26px;
-        border: none;
+        width: 26px !important;
+        height: 26px !important;
+        border: none !important;
+        padding: 0px !important;
+
+        // &__img {
+        //     position: absolute;
+        //     top: 0;
+        //     right: 0;
+        // }
     }
 
     &__button-email:hover {
         background-color: #D9D9D9;
+    }
+
+    &__button::after {
+        content: url("src/images/button-email.svg");
+        position: absolute;
+        top: 5px; 
+        right: 0;
+        pointer-events: none;
     }
 
     &__follow-us {

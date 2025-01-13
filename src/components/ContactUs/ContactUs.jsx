@@ -1,5 +1,6 @@
 import "./ContactUs.scss"
 import { Button } from "../Button/Button"
+import { Link } from "react-router-dom";
 
 export const ContactUs = () => {
     return (
@@ -10,9 +11,10 @@ export const ContactUs = () => {
                 <div className="contactUs__right-side">
                     <p className="contactUs__text">Contact us below to work together to build your amazing interior</p>
 
-                    <div className="contactUs__button">
+
+                    <Link to="/contact">
                         <Button variant="secondary">Contact Us</Button>
-                    </div>
+                    </Link>
                 </div>
             </div>
         </div>

@@ -17,9 +17,9 @@ export const Footer = () => {
                         <div className="footer__input">
                             <input type="footer__email" placeholder="Email Address"></input>
 
-                            <button className="footer__button-email" >
-                                <img src="src/images/button-email.svg"></img>
-                            </button>
+                            <div className="footer__button">
+                                <input className="footer__button-email" type="submit" value=" "></input>
+                            </div>
                         </div>
                     </form>
 
@@ -27,10 +27,21 @@ export const Footer = () => {
                         <span className="footer__follow">Follow us On</span>
 
                         <div className="footer__social-networks">
-                            <img className="footer__network" src="src/images/social-networks/facebook.svg"></img>
-                            <img className="footer__network" src="src/images/social-networks/instagram.svg"></img>
-                            <img className="footer__network" src="src/images/social-networks/tiktok.svg"></img>
-                            <img className="footer__network" src="src/images/social-networks/youtube.svg"></img>
+                            <a className="footer__network-link">
+                                <img className="footer__network" src="src/images/social-networks/facebook.svg"></img>
+                            </a>
+
+                            <a className="footer__network-link">  
+                                <img className="footer__network" src="src/images/social-networks/instagram.svg"></img>
+                            </a>
+
+                            <a className="footer__network-link"> 
+                                <img className="footer__network" src="src/images/social-networks/tiktok.svg"></img> 
+                            </a>
+
+                            <a className="footer__network-link">
+                                <img className="footer__network" src="src/images/social-networks/youtube.svg"></img>
+                            </a>
                         </div>
                     </div>
                 </div>
